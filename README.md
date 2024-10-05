@@ -1,27 +1,56 @@
-# AngularHexagonTest
+# Angular Hexagon Test
+
+- [DEMOLINK](https://nadiiakoch.github.io/angular-hexagon-test/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
-## Development server
+## Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular
+- leaflet
 
-## Code scaffolding
+## Running the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run the project, execute the following commands:
+⚠️ Node.js version v18.17.1 .
 
-## Build
+1. Clone the repository to your local machine, open terminal and clone repo with command bellow.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+$ git clone https://github.com/NadiiaKoch/angular-hexagon-test.git
+```
 
-## Running unit tests
+2. Open project in terminal.
+   Set up project and install necessary packages:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+$ cd angular-hexagon-test
+```
 
-## Running end-to-end tests
+3. Set up project and install necessary packages:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+$ npm install
+```
 
-## Further help
+4. Add command to terminal:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+$ npm start
+```
+
+5. Open application in your browser http://localhost:4200/
+
+## Task
+
+Create a hexagons view for data that in data.json.
+
+data.json contains coordinates and color in which hexagon should be colored.
+
+Coordinates in EPSG:3857 system and should be converted to EPSG:4326 system.
+
+- Map: openstreetmap, google map or etc. (doesn't matter which one)
+- Hexagon size should change depending on zoom level, lower zoom bigger hexagon
+- For hexagon color use property COLOR_HEX from data.json
+- Hexagons should be shown only for screen area
+- Results of development please send as git repo link with instraction how to start it
